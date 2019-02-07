@@ -2,6 +2,8 @@
 excel转json，转换工具
 
 ### 使用bat批处理执行，需要安装python
+excel使用的是xlrd库
+import xlrd #http://pypi.python.org/pypi/xlrd
 
 ### excel 文件格式
 第一行为json数据的key  
