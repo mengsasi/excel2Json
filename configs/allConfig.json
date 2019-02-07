@@ -1,0 +1,15 @@
+{
+	"Sound":[
+		{ "_id":"1", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Weak_right", "description":"上阵勇者应对弱点成功", "test":"{\"id\":\"4\",\"count\":11}" },
+		{ "_id":"2", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Challenge_right", "description":"使用道具应对挑战成功", "test":"{\"id\":\"4\",\"count\":12}" },
+		{ "_id":"3", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Rate_success", "description":"战斗节点突破成功", "test":"{\"id\":\"4\",\"count\":13}" },
+		{ "_id":"4", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Rate _lost", "description":"战斗节点突破失败", "test":"{\"id\":\"4\",\"count\":14}" },
+		{ "_id":"5", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Battle_win", "description":"战斗胜利（最后一个怪物被打败，接在最后一个节点突破成功的音效后播放）", "test":"{\"id\":\"4\",\"count\":15}" },
+		{ "_id":"6", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/FlyInCoins", "description":"获取金币飞动画时播放", "test":"{\"id\":\"4\",\"count\":16}" },
+		{ "_id":"7", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/FlyInExp", "description":"获取经验飞动画时播放", "test":"{\"id\":\"4\",\"count\":17}" },
+		{ "_id":"8", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Clickbuliding", "description":"点击建筑时音效", "test":"{\"id\":\"4\",\"count\":18}" },
+		{ "_id":"9", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/PanelOpen", "description":"面板打开时音效", "test":"{\"id\":\"4\",\"count\":19}" },
+		{ "_id":"10", "playOnStart":0, "loop":0, "track":1, "prefab":"Prefabs/Sound/Equip", "description":"装备穿戴上时音效", "test":"{\"id\":\"4\",\"count\":20}" },
+		{ "_id":"11", "playOnStart":1, "loop":1, "track":1, "prefab":"Prefabs/Sound/MainTheme", "description":"背景音乐，一直播放", "test":"{\"id\":\"4\",\"count\":21}" }
+	]
+}
