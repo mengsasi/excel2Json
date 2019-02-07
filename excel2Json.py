@@ -103,7 +103,7 @@ if __name__ == '__main__':
     data = xlrd.open_workbook(excelFileName)
     allSheetNames = data.sheet_names()
     for name in allSheetNames:
-        exports = name.split("_");
+        exports = name.split("_")
         if len(exports) > 1:
             if str(exports[1]) == "noexport":
                 continue
