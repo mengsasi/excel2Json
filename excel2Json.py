@@ -31,10 +31,10 @@ def IsEmptyLine(paramTable, paramRow, paramFieldCount):
     else:
         return False
 
-def table2json(table, tableName):
+def table2json(table, tableName, exportPath):
     nrows = table.nrows
     ncols = table.ncols
-    confPath = "configs/" + tableName + ".json"
+    confPath = exportPath + tableName + ".json"
     dir = os.path.dirname(confPath)
     if dir and not os.path.exists(dir):
         os.makedirs(dir)
@@ -93,13 +93,15 @@ def table2json(table, tableName):
     return
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         print('Usage: %s <excel_file>' % sys.argv[0])
         sys.exit(1)
 
     print("handle file: %s" % sys.argv[1])
+    print("exportPath: %s" % sys.argv[2])
 	
     excelFileName = sys.argv[1]
+    exportPath = sys.argv[2]
     data = xlrd.open_workbook(excelFileName)
     allSheetNames = data.sheet_names()
     for name in allSheetNames:
@@ -109,6 +111,6 @@ if __name__ == '__main__':
                 continue
         table = data.sheet_by_name(name)
         print(name)
-        table2json(table, name)
+        table2json(table, name, exportPath)
 
     print("All OK")
