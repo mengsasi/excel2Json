@@ -95,7 +95,15 @@ for parent,dirnames,filenames in os.walk(rootdir):    #三个参数：分别返�
 　　print "the full name of the file is:" + os.path.join(parent,filename) #输出文件路径信息'''
 
 if __name__ == '__main__':
-    confPath = "configs/allConfig.json"
+    if len(sys.argv) < 2:
+        print('Usage: %s <excel_file_path>' % sys.argv[0])
+        sys.exit(1)
+
+    print("handle file all: %s" % sys.argv[1])
+	
+    exportPath = sys.argv[1]
+	
+    confPath = exportPath + "/allConfig.json"
     dir = os.path.dirname(confPath)
     if dir and not os.path.exists(dir):
         os.makedirs(dir)
@@ -108,6 +116,7 @@ if __name__ == '__main__':
     f.write(json)
     
     path = os.path.dirname(os.path.abspath(__file__))
+    
     for root, dirs, files in os.walk(path):
         for file in files:
             if os.path.splitext(file)[1] == ".xlsx":
