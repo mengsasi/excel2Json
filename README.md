@@ -3,6 +3,10 @@ excel转json，转换工具
 
 ### 使用bat批处理执行，需要安装python
 excel使用的是xlrd库
+
+安装
+pip install xlrd
+
 import xlrd #http://pypi.python.org/pypi/xlrd
 
 ### excel 文件格式
