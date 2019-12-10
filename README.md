@@ -19,6 +19,12 @@ import xlrd #http://pypi.python.org/pypi/xlrd
 sheet名称中有‘noexport’时，不导出json数据  
 excel列类型中为‘ignore’时，不导出此列
 
+### 数据类型(右边是excel中填写的类型)
+string - string
+float - number
+int - integer
+bool - bool
+
 ### simple and generatorAll
 excel2Json导出文件夹下所有excel文件，每个sheet表单独一个json文件  
 excel2Json_All将所有sheet导出到一个json文件中
